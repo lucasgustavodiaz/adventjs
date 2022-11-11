@@ -1,4 +1,4 @@
-const spaces = /\s+/
+const spaces = /\s+/g
 
 export default function listGifts(letter) {
   const gifts = letter.split(spaces).filter(gift => gift !== '' && !gift.startsWith('_'))
